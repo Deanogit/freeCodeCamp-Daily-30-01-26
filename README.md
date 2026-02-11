@@ -17,3 +17,9 @@ You are the player on the bottom of the board.
 Pawns can only move one square "up".
 Unless the pawn is in the starting row (row 2), then it can move one or two squares up.
 For example, given "D4", return ["D5"], the only square your pawn can move to. Given "B2", return ["B3", "B4"], because it's on the starting row and needs to be in ascending order.
+
+### Solution
+
+- Make sure to make `position[1]` a number! to avoid concatenation mistakes with strings and numbers ie. `B21` instead of `B3`;
+
+- Pushing the `+1` move into the array before `+2` move, the array is naturally in ascending order.
